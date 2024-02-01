@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D8V000000iJuG" method="POST">
+    
+        <input type=hidden name="orgid" value="00D8V000000iJuG">
+        <input type=hidden name="retURL" value="http://duppla.co">
+
+    <title>Solicitudes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #modern-form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .dropdown, .input-field, .rating-field, .textarea-field {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #5782F2; /* Updated color */
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4169c9; /* Darker shade for hover effect */
+        }
+        h2 {
+            color: #5782F2; /* Same blue color as the button */
+        }
+    </style>
+</head>
+<body>
+    <form id="modern-form">
+        <h2>Solicitudes</h2>
+
+        <div class="dropdown">
+            <label for="afectacion">¿Qué tipo de solicitud desea realizar?:</label>
+            <select id="00NRb000001ZLCH" name="00NRb000001ZLCH" title="Problemas con:">
+                <option value="Administraciones">Administraciones</option>
+                <option value="Servicios Públicos">Servicios Públicos</option>
+                <option value="Canon">Canon</option>
+                <option value="Estado de cuenta">Estado de cuenta</option>
+                <option value="Terminación contrato y Prorrogas">Terminación contrato y Prórrogas</option>
+            </select>
+        </div>
+
+        <div class="input-field">
+            <label for="short-text">Asunto:</label>
+            <input type="text" id="00N8V00000IUPj8" name="00N8V00000IUPj8">
+        </div>
+
+        <div class="textarea-field">
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
